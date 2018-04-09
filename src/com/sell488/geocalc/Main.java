@@ -6,16 +6,13 @@ public class Main {
 
     public static void main(String... args) {
         //test values
-        double rectLengthValue = 12;
-        double recWidthValue = 12;
+        double lengthValue = 12;
+        double widthValue = 12;
 
         Calculate calculations = new Calculate();
 
-        //rectangle area
-        calculations.rectangleArea(rectLengthValue, recWidthValue);
-
-        //gets the answer and prints it out
-        double solution = calculations.getArea();
-        System.out.println(solution);
+        System.out.println(calculations.rectangleArea(lengthValue, widthValue));
+        System.out.println();
+        System.out.println(calculations.triangleArea(lengthValue, widthValue));
     }
 }
